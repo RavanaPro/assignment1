@@ -1,11 +1,7 @@
 
-<div class="slides" >
-    <p></p>
-    <img src="">
-    <a >CTA</a>
-</div>
-<sly data-sly-use.model="com.aem.training.site.core.models.HeroModel" >
-    <div class="card1" data-sly-list="${model.heroSlides}">
+
+<sly data-sly-use.model="com.aem.training.site.core.models.ProductModel" >
+    <div class="card1" data-sly-list="${model.productList}">
         <img src="${item.image}" alt="Denim Jeans" style="width:30%">
         <h1 href="${item.link}">${item.title}</h1>
         <p class="price">${item.price}</p>
